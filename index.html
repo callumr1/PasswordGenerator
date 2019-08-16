@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Password Generator</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="site.css">
+
+    <!-- Font Awesome stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Emoji CSS -->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+    <script defer type="text/javascript" src="site.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="input-section">
+            <div class="input-row">
+                <label>Number of Characters:</label>
+                <input id="characternum" type="number" class="number-input" />
+            </div>
+            <div class="input-row">
+                <span class="margin-right underline">Include:</span>
+                <label for="symbols" class="pointer">Symbols</label>
+                <input id="symbols" type="checkbox" class="margin-right pointer" />
+                <label for="numbers" class="pointer">Numbers</label>
+                <input id="numbers" type="checkbox" class="margin-right pointer" />
+            </div>
+            <div class="input-row align-center">
+                <a id="generate" class="btn-main pointer">Generate</a>
+            </div>
+            <div class="input-row-space">
+                <hr />
+            </div>
+            <div class="input-row">
+                <label for="password">Password:</label>
+                <input id="password" class="password-input" />
+                <div class="tooltip">
+                    <a id="copyPass" class="btn-copy pointer"><i class="far fa-copy"></i></a>
+                    <span class="tooltiptext" id="toolTip">Copy to clipboard</span>
+                </div>
+            </div>
+            <meter min="0" max="5" id="password-strength-meter"></meter>
+            <span id="password-strength-text"></span>
+            <p id="crack-times-dropdown"></p>
+            <div id="password-crack-times">
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- zxcvbn password strength checker api -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+
+</html>

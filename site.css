@@ -1,0 +1,229 @@
+html {
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    display: flex;
+    height: 98vh;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F7F7F7;
+}
+
+.container {
+    margin-top: 10vh;
+    height: 50vh;
+    text-align: center;
+}
+
+.input-section {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.input-row {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 1rem 0;
+}
+
+.align-center {
+    justify-content: center;
+}
+
+.margin-right {
+    margin-right: 0.5rem;
+}
+
+input {
+    margin-left: 5px;
+}
+
+input:focus {
+    outline: none;
+    border: #88BEFF solid 2px;
+}
+
+.number-input,
+.password-input {
+    padding-left: 2px;
+    font-size: 0.9rem;
+    font-family: "Nunito", sans-serif;
+    border: rgba(0, 0, 0, 0.2) solid 2px;
+}
+
+.number-input {
+    width: 3rem;
+    border-radius: 5px;
+}
+
+.password-input {
+    border-radius: 5px 0 0 5px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.input-row-space {
+    margin: 1.5rem 0;
+}
+
+hr {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    content: "";
+    height: 2px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    transform-origin: center left;
+}
+
+.tooltip {
+    position: relative;
+    display: flex;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 3px;
+    left: 400%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-size: 0.8rem;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: -10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.btn-main,
+.btn-main:hover,
+.btn-main:active,
+.btn-copy,
+.btn-copy:hover,
+.btn-copy:active {
+    transition: 0.2s;
+}
+
+.btn-main,
+.btn-copy {
+    transition: 0.2s;
+    font-size: 0.9rem;
+}
+
+.btn-main {
+    border-radius: 5px;
+    background-color: #4F759B;
+    color: white;
+    padding: 5px 10px;
+}
+
+.btn-main:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
+}
+
+.btn-main:active {
+    transform: translateY(2px);
+}
+
+.btn-copy {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 3px 6px 3px 6px;
+    border-radius: 0 5px 5px 0;
+}
+
+.btn-copy:hover {
+    background-color: #4F759B;
+    color: white;
+}
+
+#password-crack-times .crack-time {
+    display: flex;
+    flex-direction: row;
+}
+
+#password-crack-times {
+    display: flex;
+    flex-direction: column;
+}
+
+#password-crack-times .time-label {
+    text-align: left;
+    font-weight: bold;
+}
+
+#password-crack-times .time-value {
+    text-align: left;
+}
+
+#crack-times-dropdown {
+    cursor: pointer;
+}
+
+.margin-top {
+    margin-top: 5px;
+}
+
+meter {
+    -moz-appearance: none;
+         appearance: none;
+
+    margin: 0 auto 1em;
+    width: 100%;
+    height: 0.5rem;
+
+    /* Applicable only to Firefox */
+    background: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Webkit based browsers */
+meter[value="1"]::-webkit-meter-optimum-value,
+meter[value="2"]::-webkit-meter-optimum-value { background: red; }
+meter[value="3"]::-webkit-meter-optimum-value { background: orange; }
+meter[value="4"]::-webkit-meter-optimum-value { background: yellow; }
+meter[value="5"]::-webkit-meter-optimum-value { background: green; }
+meter::-webkit-meter-optimum-value { transition: width .4s linear; }
+
+/* Gecko based browsers */
+meter[value="1"]::-moz-meter-bar,
+meter[value="2"]::-moz-meter-bar { background: red; }
+meter[value="3"]::-moz-meter-bar { background: orange; }
+meter[value="4"]::-moz-meter-bar { background: yellow; }
+meter[value="5"]::-moz-meter-bar { background: green; }
+meter::-moz-meter-bar { transition: width .4s linear; }
+
+meter::-webkit-meter-bar {
+    background: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
