@@ -193,6 +193,17 @@ hr {
     margin-top: 5px;
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.footer a {
+    color: #4F759B;
+}
+
 meter {
     -moz-appearance: none;
          appearance: none;
@@ -229,7 +240,6 @@ meter::-webkit-meter-bar {
 
 @media screen and (max-width: 799px) {
     html {
-        font-size: 25px;
         overflow: hidden;
     }
 
