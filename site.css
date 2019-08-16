@@ -226,3 +226,14 @@ meter::-webkit-meter-bar {
     background: none;
     background-color: rgba(0, 0, 0, 0.1);
 }
+
+@media screen and (max-width: 799px) {
+    html {
+        font-size: 25px;
+    }
+
+    input [type="checkbox"] {
+        min-height: 15px;
+        min-width: 15px;
+    }
+}
