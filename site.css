@@ -230,6 +230,7 @@ meter::-webkit-meter-bar {
 @media screen and (max-width: 799px) {
     html {
         font-size: 25px;
+        overflow: hidden;
     }
 
     input [type="checkbox"] {
