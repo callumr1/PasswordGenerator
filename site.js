@@ -137,11 +137,12 @@ $("#copyPass").click(function () {
     $("#password").val(pass);
 
     // Change the Tooltip text to show copied for 3 seconds then change it back
-    var tooltip = document.getElementById("toolTip");
+    var tooltip = $("#toolTip");
     setTimeout(function () {
-        tooltip.innerHTML = "Copy to clipboard";
+        tooltip.html("Copy to clipboard");
+        tooltip.hide(100);
     }, 3000);
-    tooltip.innerHTML = "Copied!";
+    tooltip.html("Copied!");
 });
 
 $("#characternum").on("change", function () {
