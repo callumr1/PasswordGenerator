@@ -5,6 +5,7 @@ I created the password generation logic using jQuery, and it tries to create pas
 The Password Generator also utilises the [zxcvbn](https://github.com/dropbox/zxcvbn) api, created by dropbox, for password strength estimation. Password Generator currently uses the password strength estimation to give the user a simple estimate on the password's strength, along with the password crack times using different environments.
 
 Future improvements/TODO:
- - [ ] Include password hints from zxcvbn
- - [ ] Improve mobile interface
+ - [x] Include password hints from zxcvbn
+ - [x] Improve mobile interface
  - [ ] Create random-word password generation method
+ - [ ] Add Dark mode option
